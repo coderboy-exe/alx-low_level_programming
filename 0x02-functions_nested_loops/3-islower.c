@@ -3,6 +3,8 @@
 /**
  * _islower - checks if c is lowercase
  *
+ * @c: char to be checked
+ *
  * Return: A1 if lowercase, 0 if uppercase
  */
 
