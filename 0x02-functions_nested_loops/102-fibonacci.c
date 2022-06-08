@@ -23,7 +23,7 @@ int main(void)
 	}
 	if (i == 50)
 	{
-		printf("%ld", sum);
+		printf("%ld ", sum);
 	}
 	return (0);
 }
