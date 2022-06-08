@@ -22,4 +22,5 @@ int main(void)
 		a = b;
 		b = c;
 	}
+	return (0);
 }
