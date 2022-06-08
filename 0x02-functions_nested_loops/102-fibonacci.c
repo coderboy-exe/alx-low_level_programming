@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
  */
 
-void main()
+int main(void)
 {
 	int a = 1, b = 2, c, num = 50, count = 0;
 
