@@ -8,20 +8,20 @@
 
 int main(void)
 {
-	int num = 0, sum;
+	int num;
+	int sum;
 
-	while (num < 1024)
+	sum = 0;
+
+	for (num = 0; num < 1024; num++)
 	{
-		sum = 0;
-
 		if ((num % 3 == 0) || (num % 5 == 0))
 		{
 			sum += num;
 		}
-		num++;
 	}
 
-	printf("%d\n", num);
+	printf("%d\n", sum);
 
 	return (0);
 }
