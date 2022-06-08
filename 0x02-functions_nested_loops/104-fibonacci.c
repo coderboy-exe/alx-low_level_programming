@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print first 50 fib
+ * main - print first 98 fib
  *
  * Return: Always 0 (Success)
  */
@@ -14,7 +14,7 @@ int main(void)
 
 	printf("%ld, %ld, ", a, b);
 
-	for (i = 3; i <= 50; ++i)
+	for (i = 3; i <= 98; ++i)
 	{
 		printf("%ld, ", sum);
 		a = b;
