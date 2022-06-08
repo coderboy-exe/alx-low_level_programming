@@ -8,19 +8,18 @@
 
 int main(void)
 {
-	int a = 1, b = 2, c, num = 50, count = 0;
+	int i;
+	int a = 1, b = 2;
+	int sum = a + b;
 
-	printf("%d, ", a);
-	printf("%d, ", b);
-	count = 2;
+	printf("%d, %d, ", a, b);
 
-	while (count < num)
+	for (i = 3; i <= 50; ++i)
 	{
-		c = a + b;
-		count++;
-		printf("%d, ", c);
+		printf("%d, ", sum);
 		a = b;
-		b = c;
+		b = sum;
+		sum = a + b;
 	}
 	return (0);
 }
