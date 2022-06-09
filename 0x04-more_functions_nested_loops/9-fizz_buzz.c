@@ -5,8 +5,7 @@
  * print mutiples of 3 as "Fizz"
  * print multiples of 5 as "Buzz"
  * print multiples of both 3 and 5 "FizzBuzz"
- *
- * Return: Always 0
+ * Return: 0 On success
  */
 int main(void)
 {
@@ -30,9 +29,8 @@ int main(void)
 		{
 			printf("%d ", n);
 		}
-
 		n++;
 	}
-
+	printf("\n");
 	return (0);
 }
