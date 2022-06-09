@@ -12,7 +12,6 @@ void print_diagonal(int n)
 	if (n > 0)
 	{
 		slash = 1;
-
 		while (slash <= n)
 		{
 			 for (gap = 1; gap < slash; gap++)
