@@ -7,6 +7,7 @@
  * print multiples of both 3 and 5 "FizzBuzz"
  * Return: 0 On success
  */
+
 int main(void)
 {
 	int n = 1;
@@ -27,16 +28,16 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", n);
+			printf("%d", n);
 		}
 
 		if (n < 100)
 		{
 			printf(" ");
 		}
-
 		n++;
 	}
+
 	printf("\n");
 	return (0);
 }
