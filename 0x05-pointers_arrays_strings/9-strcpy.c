@@ -20,7 +20,7 @@ int _strlen(char *s)
 }
 
 /**
- * _strcpy - copies the string pointed to by 'src', including the 
+ * _strcpy - copies the string pointed to by 'src', including the
  * terminating nnull byte(\0), to the buffer pointed to by 'dest'
  * @src: pointer to string to be copied
  * @dest: pointer to buffer to be copied to
@@ -33,7 +33,7 @@ char *_strcpy(char *dest, char *src)
 
 	while (i <= _strlen(src))
 	{
-		dest[i] = src[i];	
+		dest[i] = src[i];
 		i++;
 	}
 
