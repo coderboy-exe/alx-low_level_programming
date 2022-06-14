@@ -2,9 +2,12 @@
 
 /**
  * rev_string - reverse a string
- * _strlen - returns the length of a string
  * @s: string to reverse
  * Return: string length
+ */
+
+/**
+ * _strlen - returns the length of a string
  */
 
 int _strlen(char *s)
