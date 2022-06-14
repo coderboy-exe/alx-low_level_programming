@@ -31,10 +31,9 @@ int first_num_id(char *s)
 
 	for (i = 0; i < _strlen(s); i++)
 	{
-		if (s[1] >= '0' && s[i] <= '9')
-			return(i);
+		if (s[i] >= '0' && s[i] <= '9')
+			return (i);
 	}
-
 	return (-1); /* if no digits are found */
 }
 
