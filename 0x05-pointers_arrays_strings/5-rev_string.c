@@ -2,7 +2,8 @@
 
 /**
  * _strlen - returns the length of a string
- * @s: first int to swap
+ * rev_string - reverse a string
+ * @s: string to reverse
  * Return: string length
  */
 
@@ -19,10 +20,7 @@ int _strlen(char *s)
 	return (length);
 }
 
-/**rev_string - reverse a string
- * @s: string to reverse
- */
-
+/*reverse the string*/
 void rev_string(char *s)
 {
 	int i = 0;
