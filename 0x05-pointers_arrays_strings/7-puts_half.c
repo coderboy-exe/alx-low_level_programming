@@ -20,7 +20,7 @@ int _strlen(char *s)
 }
 
 /**
- * puts2 - prints last half of a string
+ * puts_half - prints last half of a string
  * @str: string to be printed
  */
 
@@ -41,7 +41,7 @@ void puts_half(char *str)
 
 	while (i < length)
 	{
-		_putchar(*str + i);
+		_putchar(*(str + i));
 		i++;
 	}
 
