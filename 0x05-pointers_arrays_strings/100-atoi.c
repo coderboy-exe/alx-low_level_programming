@@ -77,7 +77,7 @@ int _atoi(char *s)
 	/* exit program if there are no digits */
 	if (first_digit_id < 0)
 		return (0);
-	
+
 	sign = _sign(s);
 
 	/* get digits to print */
