@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * reverse_array - reverse the order of an array
- * @a: array
- * @n: no of elememts in array
+ * string_toupper - convert a string to uppercase
+ * @s: string argument
+ * Return: the uppercase string
  */
 
 char *string_toupper(char *s)
