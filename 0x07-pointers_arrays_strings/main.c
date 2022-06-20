@@ -26,7 +26,7 @@ int main(void)
 
 
 
-		        t = _strpbrk(s, f);
+		        t = _strstr(s, f);
 
 			    printf("%s\n", t);
 
