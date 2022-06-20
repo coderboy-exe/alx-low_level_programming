@@ -20,15 +20,15 @@ int main(void)
 
 	    char *s = "hello, world";
 
-	        char *f = "oleh";
+	        char *f = "world";
 
-		    unsigned int n;
+		    char *t;
 
 
 
-		        n = _strspn(s, f);
+		        t = _strpbrk(s, f);
 
-			    printf("%u\n", n);
+			    printf("%s\n", t);
 
 			        return (0);
 
