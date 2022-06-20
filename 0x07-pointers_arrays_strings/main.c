@@ -18,24 +18,18 @@ int main(void)
 
 {
 
-	    char *s = "hello";
+	    char *s = "hello, world";
 
-	        char *f;
+	        char *f = "oleh";
 
-
-
-		    f = _strchr(s, 'l');
+		    unsigned int n;
 
 
 
-		        if (f != NULL)
+		        n = _strspn(s, f);
 
-				    {
+			    printf("%u\n", n);
 
-					            printf("%s\n", f);
-
-						        }
-
-			    return (0);
+			        return (0);
 
 }
