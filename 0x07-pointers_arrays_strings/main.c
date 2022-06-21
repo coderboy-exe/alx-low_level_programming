@@ -18,18 +18,28 @@ int main(void)
 
 {
 
-	    char *s = "hello, world";
+	    char board[8][8] = {
 
-	        char *f = "world";
+		            {'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
 
-		    char *t;
+			            {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
 
+				            {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
 
+					            {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
 
-		        t = _strstr(s, f);
+						            {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
 
-			    printf("%s\n", t);
+							            {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
 
-			        return (0);
+								            {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+
+									            {'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},
+
+										        };
+
+	        print_chessboard(board);
+
+		    return (0);
 
 }
