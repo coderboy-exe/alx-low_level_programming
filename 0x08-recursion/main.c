@@ -18,22 +18,58 @@ int main(void)
 
 {
 
-	    int n;
+	    int r;
 
 
 
-	        n = is_palindrome("redder");
+	        r = wildcmp("main.c", "*.c");
 
-		    printf("%d\n", n);
+		    printf("%d\n", r);
 
-	        n = is_palindrome("test");
-		    printf("%d\n", n);
-	        n = is_palindrome("level");
-		    printf("%d\n", n);
-	        n = is_palindrome("sighs");
-		    printf("%d\n", n);
+		        r = wildcmp("main.c", "m*a*i*n*.*c*");
 
+			    printf("%d\n", r);
 
-		        return (0);
+			        r = wildcmp("main.c", "main.c");
+
+				    printf("%d\n", r);
+
+				        r = wildcmp("main.c", "m*c");
+
+					    printf("%d\n", r);
+
+					        r = wildcmp("main.c", "ma********************************c");
+
+						    printf("%d\n", r);
+
+						        r = wildcmp("main.c", "*");
+
+							    printf("%d\n", r);
+
+							        r = wildcmp("main.c", "***");
+
+								    printf("%d\n", r);
+
+								        r = wildcmp("main.c", "m.*c");
+
+									    printf("%d\n", r);
+
+									        r = wildcmp("main.c", "**.*c");
+
+										    printf("%d\n", r);
+
+										        r = wildcmp("main-main.c", "ma*in.c");
+
+											    printf("%d\n", r);
+
+											        r = wildcmp("main", "main*d");
+
+												    printf("%d\n", r);
+
+												        r = wildcmp("abc", "*b");
+
+													    printf("%d\n", r);
+
+													        return (0);
 
 }
