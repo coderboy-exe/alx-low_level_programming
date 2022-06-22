@@ -22,11 +22,17 @@ int main(void)
 
 
 
-	        n = factorial(5);
+	        n = _pow_recursion(1024, 0);
 
 		    printf("%d\n", n);
 
-	        n = factorial(-1024);
+	        n = _pow_recursion(5, -2);
+		    printf("%d\n", n);
+	        n = _pow_recursion(5, 2);
+		    printf("%d\n", n);
+	        n = _pow_recursion(-5, 3);
+		    printf("%d\n", n);
+	        n = _pow_recursion(1, 10);
 		    printf("%d\n", n);
 
 
