@@ -22,17 +22,17 @@ int main(void)
 
 
 
-	        n = _pow_recursion(1024, 0);
+	        n = _sqrt_recursion(1024);
 
 		    printf("%d\n", n);
 
-	        n = _pow_recursion(5, -2);
+	        n = _sqrt_recursion(25);
 		    printf("%d\n", n);
-	        n = _pow_recursion(5, 2);
+	        n = _sqrt_recursion(16);
 		    printf("%d\n", n);
-	        n = _pow_recursion(-5, 3);
+	        n = _sqrt_recursion(17);
 		    printf("%d\n", n);
-	        n = _pow_recursion(1, 10);
+	        n = _sqrt_recursion(-1);
 		    printf("%d\n", n);
 
 
