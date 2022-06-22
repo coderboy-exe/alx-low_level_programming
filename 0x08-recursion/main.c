@@ -22,17 +22,15 @@ int main(void)
 
 
 
-	        n = is_prime_number(5);
+	        n = is_palindrome("redder");
 
 		    printf("%d\n", n);
 
-	        n = is_prime_number(25);
+	        n = is_palindrome("test");
 		    printf("%d\n", n);
-	        n = is_prime_number(16);
+	        n = is_palindrome("level");
 		    printf("%d\n", n);
-	        n = is_prime_number(17);
-		    printf("%d\n", n);
-	        n = is_prime_number(-1);
+	        n = is_palindrome("sighs");
 		    printf("%d\n", n);
 
 
