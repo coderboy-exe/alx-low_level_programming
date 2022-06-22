@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * check_pal - checks if the left and right sides of the string match (palindrome)
+ * check_pal - checks if the left and right sides of the string match
  *
  * @left: left index
  * @right: right index
