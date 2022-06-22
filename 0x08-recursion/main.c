@@ -22,9 +22,13 @@ int main(void)
 
 
 
-	        n = _strlen_recursion("Corbin Coleman");
+	        n = factorial(5);
 
 		    printf("%d\n", n);
+
+	        n = factorial(-1024);
+		    printf("%d\n", n);
+
 
 		        return (0);
 
