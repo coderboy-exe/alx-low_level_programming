@@ -27,7 +27,7 @@ int check_sub_match(char *s1, char *s2, char *place)
 		return (0);
 	}
 
-	if (*s1 == '*')
+	if (*s2 == '*')
 	{
 		return (check_sub_match(s1, s2 + 1, s2 + 1));
 	}
