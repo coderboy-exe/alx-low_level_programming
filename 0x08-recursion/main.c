@@ -22,17 +22,17 @@ int main(void)
 
 
 
-	        n = _sqrt_recursion(1024);
+	        n = is_prime_number(5);
 
 		    printf("%d\n", n);
 
-	        n = _sqrt_recursion(25);
+	        n = is_prime_number(25);
 		    printf("%d\n", n);
-	        n = _sqrt_recursion(16);
+	        n = is_prime_number(16);
 		    printf("%d\n", n);
-	        n = _sqrt_recursion(17);
+	        n = is_prime_number(17);
 		    printf("%d\n", n);
-	        n = _sqrt_recursion(-1);
+	        n = is_prime_number(-1);
 		    printf("%d\n", n);
 
 
