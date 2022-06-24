@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - adds positive numbers
@@ -31,11 +32,9 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-
 		sum += atoi(argv[i]);
 	}
 
 	printf("%d\n", sum);
-
 	return (0);
 }
