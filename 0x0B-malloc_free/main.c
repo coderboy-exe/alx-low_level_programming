@@ -24,7 +24,7 @@ int main(void)
 
 
 
-	        s = _strdup("ALX SE");
+	        s = str_concat("Betty ", "Holberton");
 
 		    if (s == NULL)
 
