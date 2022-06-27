@@ -3,7 +3,7 @@
 
 /**
  * free_grid - frees a 2-D grid
- * 
+ *
  * @grid: grid to be freed
  * @height: height of grid
  */
