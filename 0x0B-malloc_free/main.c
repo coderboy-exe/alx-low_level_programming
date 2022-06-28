@@ -8,60 +8,6 @@
 
 /**
  *
- *  * print_grid - prints a grid of integers
- *
- *   * @grid: the address of the two dimensional grid
- *
- *    * @width: width of the grid
- *
- *     * @height: height of the grid
- *
- *      *
- *
- *       * Return: Nothing.
- *
- *        */
-
-void print_grid(int **grid, int width, int height)
-
-{
-
-	    int w;
-
-	        int h;
-
-
-
-		    h = 0;
-
-		        while (h < height)
-
-				    {
-
-					            w = 0;
-
-						            while (w < width)
-
-								            {
-
-										                printf("%d ", grid[h][w]);
-
-												            w++;
-
-													            }
-
-							            printf("\n");
-
-								            h++;
-
-									        }   
-
-}
-
-
-
-/**
- *
  *  * main - check the code for ALX School students.
  *
  *   *
@@ -70,17 +16,17 @@ void print_grid(int **grid, int width, int height)
  *
  *     */
 
-int main(void)
+int main(int ac, char *av[])
 
 {
 
-	    int **grid;
+	    char *s;
 
 
 
-	        grid = alloc_grid(6, 4);
+	        s = argstostr(ac, av);
 
-		    if (grid == NULL)
+		    if (s == NULL)
 
 			        {
 
@@ -88,18 +34,10 @@ int main(void)
 
 						    }
 
-		        print_grid(grid, 6, 4);
+		        printf("%s", s);
 
-			    printf("\n");
+			    free(s);
 
-			        grid[0][3] = 98;
-
-				    grid[3][4] = 402;
-
-				        print_grid(grid, 6, 4);
-
-					    free_grid(grid, 4);
-
-					        return (0);
+			        return (0);
 
 }
