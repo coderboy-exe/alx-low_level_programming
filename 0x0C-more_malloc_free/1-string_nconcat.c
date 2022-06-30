@@ -6,6 +6,7 @@
  *
  * @s1: first string
  * @s2: second string
+ * @n: number of bytes
  *
  * Return: On success, pointer to allocated memory, NULL on fail
  */
