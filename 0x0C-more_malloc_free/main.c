@@ -4,8 +4,6 @@
 
 #include <stdlib.h>
 
-#include <limits.h>
-
 
 
 /**
@@ -22,40 +20,16 @@ int main(void)
 
 {
 
-	    char *c;
-
-	        int *i;
-
-		    float *f;
-
-		        double *d;
+	    char *concat;
 
 
 
-			    c = malloc_checked(sizeof(char) * 1024);
+	        concat = string_nconcat("Best ", "School !!!", 6);
 
-			        printf("%p\n", (void *)c);
+		    printf("%s\n", concat);
 
-				    i = malloc_checked(sizeof(int) * 402);
+		        free(concat);
 
-				        printf("%p\n", (void *)i);
-
-					    f = malloc_checked(sizeof(float) * 100000000);
-
-					        printf("%p\n", (void *)f);
-
-						    d = malloc_checked(INT_MAX);
-
-						        printf("%p\n", (void *)d);
-
-							    free(c);
-
-							        free(i);
-
-								    free(f);
-
-								        free(d);
-
-									    return (0);
+			    return (0);
 
 }
