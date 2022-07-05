@@ -3,7 +3,7 @@
 
 /**
  * free_dog - frees dogs
- * d: struct to free
+ * @d: struct to free
  */
 
 void free_dog(dog_t *d)
