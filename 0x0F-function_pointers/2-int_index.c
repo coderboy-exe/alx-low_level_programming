@@ -8,7 +8,7 @@
  * @cmp: a pointer to the function to be used to compare values
  */
 
-int int_index(int *array, size_t size, void (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
@@ -20,6 +20,5 @@ int int_index(int *array, size_t size, void (*cmp)(int))
 		{
 			return (i);
 		}
-		else
 	return (-1);
 }
