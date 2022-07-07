@@ -8,7 +8,7 @@
  * @n: number of integers passed to the function
  */
 
-int print_numbers(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list arg_ptr;
 	unsigned int i;
@@ -20,7 +20,7 @@ int print_numbers(const char *separator, const unsigned int n, ...)
 		printf("%d", va_arg(arg_ptr, unsigned int));
 
 		if (separator && i < (n - 1))
-			printf("%s", var_arg(arg_ptr, char));
+			printf("%s", separator);
 	}
 
 	printf("\n");
