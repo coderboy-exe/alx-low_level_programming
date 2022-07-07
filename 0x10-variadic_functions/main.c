@@ -17,12 +17,7 @@
 int main(void)
 
 {
-
-	int sum;
-
-		        sum = sum_them_all(2, 5, -1000);
-
-			printf("%d\n", sum);
+		        print_all("ceis", 'B', 3, "stSchool");
 
 			        return (0);
 
