@@ -15,7 +15,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	char *str;
 
-	va_start (arg_ptr, n);
+	va_start(arg_ptr, n);
 
 	for (i = 0; i < n; i++)
 	{
@@ -30,5 +30,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 
 	printf("\n");
-	va_end (arg_ptr);
+	va_end(arg_ptr);
 }
