@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * free_listint - frees a listint_t list
- * @head: the head of the linked list
+ * pop_listint - deletes the headnode of a linked list
+ * @head: pointer to the head of the linked list
  *
- * Return: nothing(void)
+ * Return: the node
  */
 
 int pop_listint(listint_t **head)
