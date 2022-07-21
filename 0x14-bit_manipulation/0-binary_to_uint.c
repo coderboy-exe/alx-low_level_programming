@@ -26,7 +26,7 @@ unsigned int binary_to_uint(const char *b)
 		if ((b[i] != '0') && (b[i] != '1'))
 			return (num);
 
-		/* compute squares with binary (e.g 1<<2 = 100 in binary) */
+	/* compute squares with binary (e.g 1<<2 = 100 in binary) */
 		if (b[i] == '1')
 			num += (1 * (1 << len));
 		i++;
