@@ -12,11 +12,10 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *newNode, *tmp;
-	
-	newNode = (dlistint_t*) malloc(sizeof(struct dlistint_s));
+
+	newNode = (dlistint_t *) malloc(sizeof(struct dlistint_s));
 
 	newNode->n = n;
-
 	newNode->next = NULL;
 	newNode->prev = NULL;
 
