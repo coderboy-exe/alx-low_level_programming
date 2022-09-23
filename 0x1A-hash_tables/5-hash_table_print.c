@@ -10,23 +10,23 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *item;
-	unsigned long int id = 0;
+	unsigned long int idx = 0;
 	char *delim = "";
 
 	if (ht == NULL)
 		return;
 
 	printf("{");
-	while (id < ht->size)
+	while (idx < ht->size)
 	{
-		item = ht->array[id];
+		item = ht->array[idx];
 		while (item)
 		{
-			printf("%s\'%s\': \'%s\' ", delim, item->key, item->value);
+			printf("%s\'%s\': \'%s\'", delim, item->key, item->value);
 			delim = ", ";
 			item = item->next;
 		}
-		id++;
+		idx++;
 	}
 	printf("}\n");
 }
