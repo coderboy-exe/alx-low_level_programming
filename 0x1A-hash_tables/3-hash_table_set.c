@@ -24,9 +24,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(item->key, key) == 0)
 		{
+			free(item->value);
 			strcpy(item->value, value);
 			return (1);
 		}
+		item = item->next;
 	}
 	new = malloc(sizeof(hash_node_t));
 	if (new == NULL)
