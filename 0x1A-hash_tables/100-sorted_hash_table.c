@@ -130,7 +130,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 		return (NULL);
 
 	idx = key_index((const unsigned char *)key, ht->size);
-	if(idx >= ht->size)
+	if (idx >= ht->size)
 		return (NULL);
 
 	item = ht->shead;
@@ -153,7 +153,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 void shash_table_print(const shash_table_t *ht)
 {
 	shash_node_t *item;
-	char *delim = "";
+	int flag = 0;
 
 	if (ht == NULL)
 		return;
@@ -162,8 +162,10 @@ void shash_table_print(const shash_table_t *ht)
 	item = ht->shead;
 	while (item)
 	{
-		printf("%s\'%s\': \'%s\' ", delim, item->key, item->value);
-		delim = ", ";
+		if (flag == 1)
+			printf(", ");
+		flag = 1;
+		printf("'%s': '%s'", item->key, item->value);
 		item = item->snext;
 	}
 	printf("}\n");
@@ -179,7 +181,7 @@ void shash_table_print(const shash_table_t *ht)
 void shash_table_print_rev(const shash_table_t *ht)
 {
 	shash_node_t *item;
-	char *delim = "";
+	int flag = 0;
 
 	if (ht == NULL)
 		return;
@@ -188,8 +190,9 @@ void shash_table_print_rev(const shash_table_t *ht)
 	item = ht->stail;
 	while (item)
 	{
-		printf("%s\'%s\': \'%s\' ", delim, item->key, item->value);
-		delim = ", ";
+		if (flag == 1)
+			printf(", ");
+		printf("'%s': '%s'", item->key, item->value);
 		item = item->sprev;
 	}
 	printf("}\n");
