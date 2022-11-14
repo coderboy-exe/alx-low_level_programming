@@ -3,6 +3,7 @@
     Module to solve island perimeter problem
 """
 
+
 def island_perimeter(grid):
     """
         Compute perimeter of the grids containing "1"
