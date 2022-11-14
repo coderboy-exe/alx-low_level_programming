@@ -6,7 +6,7 @@ RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 #Specify all targets that are not files
-.PHONY: clean oclean fclean re
+.PHONY: all clean oclean fclean re
 
 all: m.h ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
