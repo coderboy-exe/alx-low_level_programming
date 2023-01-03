@@ -1,10 +1,10 @@
 #include "search_algos.h"
 
 /**
- * binary_search - searches for a value in an array of integers using the Linear
- * Search Algorithm
+ * binary_search - searches for a value in an array of integers using the
+ * Linear Search Algorithm
  *
- * @array: a pointer to the first element of the array (Sorted in ascending order)
+ * @array: a pointer to the first element of the array (Sorted in asc order)
  * @size: number of elements in the array
  * @value: value to search for
  *
@@ -23,12 +23,12 @@ int binary_search(int *array, size_t size, int value)
 	beg = 0;
 	mid = 0;
 	end = size - 1;
-	while (i <= end)
+	while (beg <= end)
 	{
 		printf("Searching in array: ");
-		for (i = 0; i <= end; i++)
+		for (i = beg; i <= end; i++)
 		{
-				if (i != end)
+			if (i != end)
 				printf("%d, ", array[i]);
 			else
 				printf("%d\n", array[i]);
